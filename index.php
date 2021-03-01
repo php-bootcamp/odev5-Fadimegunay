@@ -7,14 +7,15 @@
             <div class="panel-body">
                 <a href="/product-create.php" class="btn btn-success">Yeni Ürün Ekle</a>
                 <a href="/category-create.php" class="btn btn-success">Yeni Kategori Ekle</a>
-                <?php  
-                    if(count($products) > 0){
-                ?>
-                  <div class="pull-right"> 
-                    <a href="/functions/services.php?do=export_products" class="btn btn-success">Dışa Aktar</a>
+                <div class="pull-right"> 
+                    <?php  
+                        if(count($products) > 0){
+                    ?>
+                        <a href="/functions/services.php?do=export_products" class="btn btn-success">Dışa Aktar</a>
+                    <?php } ?>
                     <a href="/import.php" class="btn btn-success">İçe Aktar</a>
-                  </div> 
-                <?php } ?>
+                </div> 
+               
             </div>
         </div>
         <?php
